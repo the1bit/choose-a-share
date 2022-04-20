@@ -50,10 +50,13 @@
   font-weight: 600;
   background-color: cadetblue;
   padding: 5px;
+  margin-bottom: 10px;
 }
 
 .DataHeader {
   vertical-align: top;
+  background-color: whitesmoke;
+
 }
 
 .Above_Fair_Value {
@@ -69,7 +72,7 @@
 }
 
 .Optimal {
-  animation: blink 5s infinite;
+  animation: blink 3s infinite;
 }
 
 @keyframes blink {
@@ -78,6 +81,49 @@
   }
 }
 
-.InportantColumn{
+.InportantColumn {
   font-weight: 900;
+}
+
+.tableFixHead {
+  overflow: auto;
+  height: 74vh;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: whitesmoke;
+}
+
+/* Just common table stuff. Really. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px 16px;
+}
+
+th {
+  background-color: whitesmoke;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.mainIcon {
+  width: 65px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.versionNumber{
+  font-weight: 300;
+  font-size: 11px;
 }
