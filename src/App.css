@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: whitesmoke;
 }
 
 .App-logo {
@@ -32,7 +33,51 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.Header {
+  background-color: rgba(0, 179, 179, 0.8);
+  padding: 10px;
+  font-weight: 800;
+  vertical-align: top;
+}
+
+.DataUpdated {
+  font-weight: 600;
+  background-color: cadetblue;
+  padding: 5px;
+}
+
+.DataHeader {
+  vertical-align: top;
+}
+
+.Above_Fair_Value {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.At_Fair_Value {
+  background-color: whitesmoke;
+}
+
+.In_the_Margin_of_Safety {
+  background-color: rgba(0, 128, 0, 0.2);
+}
+
+.Optimal {
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  100% {
+    background-color: rgb(34, 192, 227);
+  }
+}
+
+.InportantColumn{
+  font-weight: 900;
 }
