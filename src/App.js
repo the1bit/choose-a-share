@@ -83,6 +83,7 @@ function App() {
                 <th>{headerRow.__EMPTY_9}</th>
                 <th>Div increase %</th>
                 <th className={'InportantColumn'}>Div increase % + DIV</th>
+                <th className={'InportantColumn'}>Div increase (5Y DGR)</th>
                 <th>{headerRow.__EMPTY_11}</th>
                 <th>{headerRow.__EMPTY_12}</th>
                 <th>{headerRow.__EMPTY_15}</th>
@@ -114,6 +115,7 @@ function App() {
                       <td>{s.__EMPTY_9}</td>
                       <td>{(((parseFloat(s.__EMPTY_9) / (parseFloat(s.__EMPTY_10) * parseInt(s.__EMPTY_8))) - 1) * 100).toFixed(3)}</td>
                       <td className={'InportantColumn'}>{(parseFloat(((parseFloat(s.__EMPTY_9) / (parseFloat(s.__EMPTY_10) * parseInt(s.__EMPTY_8)) - 1) * 100).toFixed(3)) + parseFloat(s.__EMPTY_5)).toFixed(3)}</td>
+                      <td className={'InportantColumn'}>{(parseFloat(s.__EMPTY_9) + parseFloat(s.__EMPTY_17)).toFixed(3)}</td>
                       <td>{XLSX.SSF.format('yyyy-mm-dd', s.__EMPTY_11)}</td>
                       <td>{XLSX.SSF.format('yyyy-mm-dd', s.__EMPTY_12)}</td>
                       <td>{s.__EMPTY_15}</td>
@@ -133,7 +135,10 @@ function App() {
 
   const getDataClassNames = (s) => {
     let fairValueClass = (s.__EMPTY_21).split(' ').join('_');
-    let optimalChangesClass = optimalChanges <= parseFloat(((parseFloat(s.__EMPTY_9) / (parseFloat(s.__EMPTY_10) * parseInt(s.__EMPTY_8)) - 1) * 100).toFixed(3)) + parseFloat(s.__EMPTY_5) ? 'Optimal' : '';
+    //let optimalChangesClass = optimalChanges <= parseFloat(((parseFloat(s.__EMPTY_9) / (parseFloat(s.__EMPTY_10) * parseInt(s.__EMPTY_8)) - 1) * 100).toFixed(3)) + parseFloat(s.__EMPTY_5) ? 'Optimal' : '';
+    let optimalChangesClass = optimalChanges <= parseFloat((parseFloat(s.__EMPTY_9) + parseFloat(s.__EMPTY_17)).toFixed(3)) ? 'Optimal' : '';
+    
+    
     if (optimalChangesClass !== '' && fairValueClass !== 'In_the_Margin_of_Safety') {
       return fairValueClass;
     }
@@ -231,8 +236,8 @@ function App() {
             <li>Get the latest <strong>Dividend Radar</strong> xlsx <a href='https://www.portfolio-insight.com/dividend-radar' rel='noopener noreferrer' target='_blank'>here</a></li>
             <li>Upload with 'choose file' then filter the result</li>
           </ol>
-          
-          
+
+
         </div>
       </div>
       <div>{getFileUpdateDate(items)}</div>
