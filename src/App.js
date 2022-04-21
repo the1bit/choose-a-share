@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import * as XLSX from 'xlsx';
 import icon from './mainicon.png'
@@ -220,15 +219,17 @@ function App() {
 
   return (
     <div className='App'>
-
       <div className='Header'>
         <img className='mainIcon' src={icon} alt="Logo" />
         <h2>Choose-a-Share</h2>
-        <label className='versionNumber'>(Version: 20220420)</label>
-
+        <label className='versionNumber'>(Version: 20220421)</label>
+        <div className='legalInformation'>
+          <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' target='_blank'>CloudSteak</a></label><br></br>
+          <label><a href='https://github.com/the1bit/choose-a-share' target='_blank'>Source code on Github</a></label>
+        </div>
       </div>
       <div>{getFileUpdateDate(items)}</div>
-      <input type={'file'} onChange={(e) => {
+      <input className='fileChooser' type={'file'} onChange={(e) => {
         const file = e.target.files[0];
         readExcel(file);
       }} ></input>

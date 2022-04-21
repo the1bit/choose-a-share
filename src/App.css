@@ -77,7 +77,7 @@
 
 @keyframes blink {
   100% {
-    background-color: rgb(34, 192, 227);
+    background-color: rgb(91, 225, 255);
   }
 }
 
@@ -114,6 +114,8 @@ th {
 
 button {
   border-radius: 5px;
+  background-color: transparent;
+  border: 1 px solid black;
 }
 
 .mainIcon {
@@ -126,4 +128,21 @@ button {
 .versionNumber{
   font-weight: 300;
   font-size: 11px;
+}
+
+.fileChooser{
+  margin-top: 5px;
+}
+
+.legalInformation{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+
+a{
+  color: black;
 }

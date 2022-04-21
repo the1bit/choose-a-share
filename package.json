@@ -1,5 +1,6 @@
 {
   "name": "choose-a-share",
+  "homepage": "https://choose-a-share.cloudsteak.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
