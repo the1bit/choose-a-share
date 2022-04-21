@@ -139,8 +139,9 @@ button {
   top: 10px;
   right: 10px;
   font-size: 10px;
-  font-weight: 300;
+  font-weight: 400;
   border-radius: 5px;
+  text-align: left;
 }
 
 a{

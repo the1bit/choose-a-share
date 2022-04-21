@@ -224,8 +224,15 @@ function App() {
         <h2>Choose-a-Share</h2>
         <label className='versionNumber'>(Version: 20220421)</label>
         <div className='legalInformation'>
-          <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' target='_blank'>CloudSteak</a></label><br></br>
-          <label><a href='https://github.com/the1bit/choose-a-share' target='_blank'>Source code on Github</a></label>
+          <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' rel='noopener noreferrer' target='_blank'>CloudSteak</a></label><br></br>
+          <label><a href='https://github.com/the1bit/choose-a-share' rel='noopener noreferrer' target='_blank'>Source code on Github</a></label><br></br>
+          Usage:
+          <ol>
+            <li>Get the latest <strong>Dividend Radar</strong> xlsx <a href='https://www.portfolio-insight.com/dividend-radar' rel='noopener noreferrer' target='_blank'>here</a></li>
+            <li>Upload with 'choose file' then filter the result</li>
+          </ol>
+          
+          
         </div>
       </div>
       <div>{getFileUpdateDate(items)}</div>
