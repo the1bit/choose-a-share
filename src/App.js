@@ -227,7 +227,7 @@ function App() {
       <div className='Header'>
         <img className='mainIcon' src={icon} alt="Logo" />
         <h2>Choose-a-Share</h2>
-        <label className='versionNumber'>(Version: 20220421)</label>
+        <label className='versionNumber'>(Version: 20220422)</label>
         <div className='legalInformation'>
           <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' rel='noopener noreferrer' target='_blank'>CloudSteak</a></label><br></br>
           <label><a href='https://github.com/the1bit/choose-a-share' rel='noopener noreferrer' target='_blank'>Source code on Github</a></label><br></br>
