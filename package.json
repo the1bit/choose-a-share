@@ -2,13 +2,13 @@
   "name": "choose-a-share",
   "homepage": "https://choose-a-share.cloudsteak.com",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.x"
-  },
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "node test.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

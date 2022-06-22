@@ -273,8 +273,8 @@ function App() {
   const resetFilters = () => {
     document.getElementById('minimum-ages-input').value = 10;
     document.getElementById('optimal-changes-input').value = 10;
-    document.getElementById('minimum-init-div-input').value = 2;
-    document.getElementById('maximum-init-div-input').value = 7;
+    document.getElementById('minimum-init-div-input').value = 2.8;
+    document.getElementById('maximum-init-div-input').value = 7.8;
     updateMinimumAges(parseInt(document.getElementById('minimum-ages-input').value));
     updateOptimalChanges(parseFloat(document.getElementById('optimal-changes-input').value));
     updateMinimumInitDiv(parseFloat(document.getElementById('minimum-init-div-input').value));
@@ -289,7 +289,7 @@ function App() {
       <div className='Header'>
         <img className='mainIcon' src={icon} alt="Logo" />
         <h2>Choose-a-Share</h2>
-        <label className='versionNumber'>(Version: 20220608)</label>
+        <label className='versionNumber'>(Version: 20220622)</label>
         <div className='legalInformation'>
           <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' rel='noopener noreferrer' target='_blank'>CloudSteak</a></label>(
           <label><a href='https://github.com/the1bit/choose-a-share' rel='noopener noreferrer' target='_blank'>Source code on Github</a></label>)<br></br>
