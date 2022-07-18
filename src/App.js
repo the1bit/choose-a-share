@@ -227,6 +227,12 @@ function App() {
       case 'year_desc':
         tempSortParam = ['__EMPTY_3', 'desc'];
         break;
+      case 'price_asc':
+        tempSortParam = ['__EMPTY_4', 'asc'];
+        break;
+      case 'price_desc':
+        tempSortParam = ['__EMPTY_4', 'desc'];
+        break;
       case 'divyield_asc':
         tempSortParam = ['__EMPTY_5', 'asc'];
         break;
@@ -289,7 +295,7 @@ function App() {
       <div className='Header'>
         <img className='mainIcon' src={icon} alt="Logo" />
         <h2>Choose-a-Share</h2>
-        <label className='versionNumber'>(Version: 20220622)</label>
+        <label className='versionNumber'>(Version: 20220718)</label>
         <div className='legalInformation'>
           <label>Copyright {new Date().getFullYear()}, <a href='https://cloudsteak.com' rel='noopener noreferrer' target='_blank'>CloudSteak</a></label>(
           <label><a href='https://github.com/the1bit/choose-a-share' rel='noopener noreferrer' target='_blank'>Source code on Github</a></label>)<br></br>
@@ -326,6 +332,8 @@ function App() {
           <option value={'sector_desc'}>Sector (Desc)</option>
           <option value={'year_asc'}>Years (Asc)</option>
           <option value={'year_desc'}>Years (Desc)</option>
+          <option value={'price_asc'}>Price (Asc)</option>
+          <option value={'price_desc'}>Price (Desc)</option>
           <option value={'divyield_asc'}>Div Yield (Asc)</option>
           <option value={'divyield_desc'}>Div Yield (Desc)</option>
           <option value={'divincrease_asc'}>Div Increase (Asc)</option>
