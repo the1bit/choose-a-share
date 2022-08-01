@@ -17,3 +17,12 @@ NODE_OPTIONS : --max_old_space_size=460
 ![memusage settings](./images/memusage.png)
 
 
+## Update
+
+```bash
+git add .
+
+git commit -am "Version: 20220718"
+
+git push heroku main 
+```
