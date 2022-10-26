@@ -5,8 +5,8 @@
   "private": true,
   "main": "index.js",
   "engines": {
-    "node": "14.2.0",
-    "npm": "6.14.5"
+    "node": "16.17.0",
+    "npm": "8.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
